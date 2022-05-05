@@ -1,0 +1,80 @@
+/* === GENERAL === */
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: box-race;
+ }
+  
+ html {
+ font-size: 100%;
+ }
+  
+ body {
+ max-width: 1440px;
+ margin: 0 auto;
+ }
+  
+ .race {
+    margin: 10px;
+    height: 16rem;
+    border-top: 10px solid black;
+    border-left: 10px solid black;
+    background:beige;
+    position: relative;
+}
+
+.race div {
+    height: 100px;
+    width: 100px;
+    margin: .5%;
+    position: absolute;
+}
+
+.race div:nth-of-type(1) {
+    background: red;
+    top: 0;
+    left: 0;
+    transition: 6s ease;
+}
+
+.race div:nth-of-type(2) {
+    background: green;
+    top: 45%;
+    left: 0;
+    transition: 2s ease-out;
+    transition-delay: 1s;
+}
+
+section:hover>div:nth-of-type(1) {
+    top: 0;
+    left: 90%;
+    transition: 4s ease;
+}
+
+section:hover>div:nth-of-type(2) {
+    top: 45%;
+    left: 90%;
+    transition: 2s ease-out;
+    transition-delay: 1s;
+}
+
+ /* wrapper {
+ margin: 0 auto;
+ }
+  
+ /* ====== BODY ====== */
+  
+
+
+ /* ====== HEADER ====== */
+  
+ /* ====== MAIN ====== */
+  
+ /* ====== FOOTER ====== */
+  
+ /* =========================================================================
+                            MEDIA QUERIES
+ =========================================================================*/
+  
+ 
